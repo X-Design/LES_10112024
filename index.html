@@ -4,19 +4,51 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="icon" type="image/x-icon" href="/IMAGES/favicon.ico">
 	<link rel="stylesheet" href="/CSS/style.css">
 	<script src="https://kit.fontawesome.com/5e566eae31.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="page-header">
- 
-</header>
-<main class="content">
-<h1 class="h1-titel">HBE</h1>
-</main>
-
-<footer class="page-footer">
-
+   <header class="site-header">
+        <div class="logo">Logo</div>
+        <nav class="nav-buttons">
+            <button>About</button>
+            <button>Projecten</button>
+            <button>Over mij</button>
+            <button>Contact</button>
+        </nav>
+        <button class="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+    <main class="site-main">
+        <div class="image-left">
+            <picture>
+                <source media="(max-width: 600px)" srcset="left-image-small.jpg">
+                <source media="(min-width: 601px)" srcset="left-image-large.jpg">
+                <img src="left-image-large.jpg" alt="Image Left">
+            </picture>
+        </div>
+        <div class="description">
+            <h1>Welkom op mijn website</h1>
+            <p>Dit is een korte beschrijving van het doel van de website. Het geeft een overzicht van mijn werk en projecten.</p>
+        </div>
+        <div class="image-right">
+            <picture>
+                <source media="(max-width: 600px)" srcset="right-image-small.jpg">
+                <source media="(min-width: 601px)" srcset="right-image-large.jpg">
+                <img src="right-image-large.jpg" alt="Image Right">
+            </picture>
+        </div>
+    </main>
+ <footer class="site-footer">
+    <div class="footer-left">
+        &copy; 2024 Mijn Website
+    </div>
+    <div class="footer-right">
+        <a href="#" class="icon">Beyonce</a>
+        <a href="#" class="icon">Facebook</a>
+        <a href="#" class="icon">LinkedIn</a>
+    </div>
 </footer>
+    <script src="/JS/script.js"></script>
 </body>
 </html>
